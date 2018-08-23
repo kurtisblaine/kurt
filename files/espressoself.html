@@ -1,0 +1,48 @@
+<html>
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/otherstyle.css">
+
+    <head>
+      <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+    <script>
+        function javafxEmbed() {
+            dtjava.embed(
+                {
+                    url : 'CoffeeGame.jnlp',
+                    placeholder : 'javafx-app-placeholder',
+                    width : 200,
+                    height : 200
+                },
+                {
+                    javafx : '8.0+'
+                },
+                {}
+            );
+
+            dtjava.embed(
+                {
+                    url : 'CoffeeGame.jnlp',
+                    placeholder : 'coffeegame-placeholder-placeholder',
+                    width : 400,
+                    height : 400
+                },
+                {
+                    javafx : '8.0+'
+                },
+                {}
+            );
+        }
+        <!-- Embed FX application into web page once page is loaded -->
+        dtjava.addOnloadCallback(javafxEmbed);
+    </script>
+
+    </head><body>
+      <h2>Test page for <b>EspressoSelf</b></h2>
+      <!-- Applet will be inserted here -->
+      <div id='javafx-app-placeholder'></div>
+      <div id='coffeegame-placeholder'></div>
+      <h3>
+          <a class="btn btn-primary" target="_blank" href="https://github.com/kurtisblaine/CoffeeGame.git" role="button">Code</a>
+      </h3>
+
+    </body></html>
